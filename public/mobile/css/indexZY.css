@@ -1,0 +1,17 @@
+.mui-navigate-right span.mui-icon-contact{
+    float: left;
+    line-height: 40px;
+    font-size: 40px;
+
+}
+
+.mui-scroll>a{
+    width: 90%;
+    display: block;
+    padding: 6px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    color: #000;
+    text-align: center;
+    border-radius: 3px;
+}

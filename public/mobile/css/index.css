@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+.lt-classify{
+    width: 100%;
+    padding: 10px;
+}
+.lt-classify ul{
+    width: 100%;
+}
+.lt-classify ul li{
+    float: left;
+    width: 33.33%;
+}
+.lt-classify ul li img{
+    width: 100%;
+}
+
+.lt-SALE{
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+}
+.lt-SALE ul{
+    width: 100%;
+}
+.lt-SALE ul li{
+    float: left;
+    width: 33.33%;
+}
+.lt-SALE ul>li:nth-child(3){
+    float: right;
+}
+.lt-SALE ul li img{
+    width: 100%;
+}
+
+.lt-brand{
+    width: 100%;
+    padding: 5px 10px 15px 10px;
+}
+.lt-brand ul{
+    width: 100%;
+}
+
+.lt-brand ul li{
+    float: left;
+    width: 25%;
+}
+.lt-brand ul li img{
+    width: 100%;
+}
+.lt-brand ul li:first-child{
+    width: 100%;
+}
+.lt-brand ul li:first-child img{
+    width: 100%;
+}
+.lt-brand ul li:last-child{
+    width: 100%;
+}
+.lt-brand ul li:last-child img{
+    width: 100%;
+}
+
+/*首页中下部*/
+.exercise{
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+}
+.exercise>div{
+    width: 100%;
+}
+
+.exercise>div a img{
+    width: 100%;
+}
+.exercise ul{
+    width: 100%;
+}
+
+.exercise ul{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.exercise ul li{
+    width: 49%;
+    float: left;
+    box-shadow:0 0 2px 1px #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.exercise ul li:nth-child(2n){
+    float: right;
+}
+.exercise ul li a img{
+    width: 100%;
+}
+.exercise ul li a p{
+    font-size: 14px;
+}
+.exercise ul li a span{
+    color: red;
+    font-size: 12px;
+}
+.exercise ul li a del{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.exercise ul li a button{
+    background-color: #006699;
+    color: #fff;
+    font-size: 14px;
+}
+
+.lt-woman{
+     width: 100%;
+     padding: 10px 10px 0 10px;
+ }
+.lt-woman img{
+    width: 100%;
+}
+.lt-man{
+    width: 100%;
+    padding: 10px 10px 0 10px;
+}
+.lt-man img{
+    width: 100%;
+}
+
+

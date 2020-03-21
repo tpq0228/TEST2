@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+.lt_search{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.lt_search form{
+    position: relative;
+}
+
+.lt_search .search_input{
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #006699;
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 0;
+}
+.lt_search .search_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 60px;
+    background-color: #006699;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    border-right: 1px solid #006699;
+}
+/*历史记录*/
+.lt_history {
+    font-size: 12px;
+    color: #666;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.lt_history .list{
+    list-style: none;
+    border: 1px solid #006699;
+    margin: 30px 5px;
+    padding: 0;
+}
+.lt_history .list li{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-bottom: 1px solid #006699;
+}
+.lt_history .list li a{
+    color: #666;
+    font-size: 12px;
+}
+.lt_history .list li span{
+    font-size: 12px;
+    float: right;
+    color: #666;
+    margin-top: 8px;
+}
+
+.mui-scroll .exercise{
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.mui-scroll .exercise>div{
+    width: 100%;
+    display: inline-block;
+    background-color: #c9c9c9;
+}
+
+.mui-scroll .exercise div a{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #0f0f0f;
+}
+.mui-scroll .exercise div a span{
+    font-size: 12px;
+}
+.mui-scroll .exercise .now{
+    color: orange;
+}
+.mui-scroll .exercise ul{
+    width: 100%;
+    padding: 15px;
+}
+
+.mui-scroll .exercise ul{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mui-scroll .exercise ul li{
+    width: 49%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.mui-scroll .exercise ul li:nth-child(2n){
+    float: right;
+}
+.mui-scroll .exercise ul li a img{
+    width: 100%;
+}
+.mui-scroll .exercise ul li a p{
+    height: 42px;
+    overflow: hidden;
+}
+.mui-scroll .exercise ul li a span{
+    color: red;
+}
+.mui-scroll .exercise ul li a del{
+    color: #ccc;
+}
+
+.mui-scroll .exercise ul li a button{
+    background-color: #006699;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+

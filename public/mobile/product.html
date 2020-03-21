@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--在ios中运行是否创建快捷启动方式-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--在ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转换为电话的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目介绍-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords"
+          content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="res/mui/css/mui.min.css">
+    <link rel="stylesheet" href="res/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>商品详情</title>
+</head>
+<body>
+<div class="lt_container">
+    <!--头部-->
+    <div class="lt_header">
+        <a href="javascript:history.back()" class="left"><span class="fa fa-arrow-left"></span></a>
+        <h3>搜索中心</h3>
+        <!--<a href="#" class="right"><span class="fa fa-search"></span></a>-->
+    </div>
+    <!--内容-->
+    <div class="lt_content">
+        <div class="lt_wrapper">
+            <div class="mui-scroll-wrapper" id="refreshContainer">
+                <div class="mui-scroll">
+                    <div class="lt_search">
+                        <!--模板引擎-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="drade_top_btn">
+        <span class="fa fa-shopping-cart car"></span>
+        <a href="#"><button class="drade_join">加入购物车</button></a>
+        <a href="#"><button class="drade_buy">立即购买</button></a>
+    </div>
+</div>
+
+<script type="text/template" id="product">
+    <!--轮播图-->
+    <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <!--支持循环，需要重复图片节点-->
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="<%=pic[pic.length-1].picAddr%>" /></a></div>
+            <% for(var i = 0 ;i < pic.length ; i++){ %>
+            <div class="mui-slider-item"><a href="#"><img src="<%=pic[i].picAddr%>" /></a></div>
+            <% } %>
+            <!--支持循环，需要重复图片节点-->
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="<%=pic[0].picAddr%>" /></a></div>
+        </div>
+        <div class="mui-slider-indicator">
+            <% for(var i = 0 ;i < pic.length ; i++){ %>
+            <div class="mui-indicator <%=i==0?'mui-active':''%>"></div>
+            <% } %>
+        </div>
+    </div>
+    <!--&lt;!&ndash;文字&ndash;&gt;-->
+    <div class="drade_text">
+        <p><%=proName%></p>
+    </div>
+    <!--&lt;!&ndash;价格&ndash;&gt;-->
+    <div class="drade_price"><span>价格:</span><b>¥<%=price%></b><s>¥<%=oldPrice%></s></div>
+    <!--尺码-->
+    <div class="drade_size">
+        尺码:
+        <%
+        var arr= size.split('-');
+        var start = arr[0], end = arr[i];
+        for(var i = start; i <= end ; i++){
+        %>
+        <span class="btn_size"><%=i%></span>
+        <% } %>
+    </div>
+    <!--&lt;!&ndash;数量&ndash;&gt;-->
+    <div class="drade_num">
+        数量:
+        <span class="jian">-</span><input type="text" value="0" data-max="<%=num%>"><span class="jia">+</span>
+        剩余:<%=num%>件
+    </div>
+</script>
+
+<script src="res/mui/js/mui.min.js"></script>
+<script src="res/zepto/zepto.min.js"></script>
+<script src="res/artTemplate/template-native.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
